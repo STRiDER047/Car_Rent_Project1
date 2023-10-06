@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+    
+<link rel="stylesheet" href="Btn2.css">
+
+        <style>
+      
+body {
+ 
+  background-image: url('car10.jpg');
+  background-size:100% 100%;
+  background-attachment: fixed;
+  
+}
+.p3 {
+  font-family: "Brush Script MT", cursive;
+  font-size: 30px
+}
+.container {
+  padding: 18px 450px;
+  width: 25%;
+    
+  
+}
+
+ input[type=text], input[type=password] , input[type=email] {
+     background-color: black;
+     width: 100%;
+  padding: 9px;
+  margin: 11px 0 10px 0;
+  color: plum;
+}
+
+hr {
+    
+  border: 0.5px solid f7c1aa;
+  margin-bottom: 0.6px;
+  
+  
+}
+
+
+a {
+  color:  dodgerblue;
+}
+.div {
+    background-image: url('Logo2.png');
+    background-repeat: no-repeat, repeat;
+    background-position:  top right;
+    background-size: 130px 130px, contain;
+    padding: 30px 50px 30px 20px;
+    font-family: arial;
+    line-height: 15px 15px ;
+    border-radius: 20px;
+}
+</style>
+       </head>
+<body>
+        <div class="div">
+<form action="Project1.html">
+  
+  <div class="container">
+      
+      <br> <h1 class="p3" style="color: #f7c1aa" >Register</h1>
+    <hr>
+    
+    <label class="p3"style="color:#f7c1aa" for="N"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="na" id="Nam" >
+<br>
+    <label class="p3" style="color:#f7c1aa" for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="email" >
+<br>
+    <label class="p3" style="color:#f7c1aa" for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" >
+
+    <hr>
+    <br>
+    
+   &#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160&#160 
+   <button style="color: activeborder" class="btn"> Shop now
+</button>
+     
+  </div>
+    </div>
+  
+</form>
+    
+</body>
+</html>
