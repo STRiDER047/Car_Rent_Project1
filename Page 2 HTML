@@ -1,1 +1,68 @@
+<html>
+    <head>
+        <title>Page 2</title>
+        <link rel="stylesheet" href="Page2C.css">
+    </head>
+    <body>
+        
+        <section class="container2">
+        <div class="Card">
+            
+            <div class="Card-imge car-1"></div>
+              <h1>Elantra</h1>
+              <br><br> &#160;
+              <button>
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Rent</span>
+</button>
+        </div>
+        <div class="Card">
+            <div class="Card-imge car-2"></div>
+              <h1>Cressida</h1>
+              <br><br> &#160;
+              <button>
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Rent</span>
+</button>
+       
+               </div>
+        <div class="Card">
+            <div class="Card-imge car-3"></div>
+              <h1>Civic</h1>
+              <br><br> &#160;
+              <button>
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Rent</span>
+</button>
+        </div>
+            
+            <div class="Card">
+            <div class="Card-imge car-4"></div>
+              <h1>Caprice</h1>
+              <br><br> &#160;
+              <button>
+    <span class="circle1"></span>
+    <span class="circle2"></span>
+    <span class="circle3"></span>
+    <span class="circle4"></span>
+    <span class="circle5"></span>
+    <span class="text">Rent</span>
+</button>
+        </div>
+        
+    </section>
+    </body>
+</html>
 
