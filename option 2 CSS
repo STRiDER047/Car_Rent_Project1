@@ -5,12 +5,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+:root {
+    --main-bg-color: rgb(242, 233, 233);
+  }
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('car6.png') no-repeat;
+    background: url('car10.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -32,6 +35,7 @@ header{
     user-select: none;
 }
 .navigation a{
+    text-decoration: none;
     position: relative;
     font-size: 1.1em;
     color: #fff;
@@ -56,7 +60,7 @@ header{
     transform: scaleX(1);
     
 }
-.navigation .btnLog-popup{
+.navigation .btnLogin-popup{
     width: 130px;
     height: 50px;
     background: transparent;
@@ -70,7 +74,7 @@ header{
     margin-left: 40px;
     transition: .5s;
 }
-.navigation .btnLog-popup:hover{
+.navigation .btnLogin-popup:hover{
     background: #fff;
     color: #162938;
 }
@@ -86,35 +90,75 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    /*transform: scale(0);*/
-    transition: height .2s ease;
+    overflow: hidden; 
+    transform: scale(0);
+    transition: transform .1s ease ,height .2s ease;
 }
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+
+.wrapper.active {
+    height: 450px;
+
+
+
+}
+
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
 }
+
+.wrapper .form-box.login{
+   transition: transform .18s ease;
+   transform: translateX(0);
+
+}
+
+.wrapper.active .form-box.login{
+    
+    transition: none;
+    transform: translateX(-400px);
+
+
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translate(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+ 
+ }
+
 .wrapper .icon-close {
     position: absolute;
     top: 0;
     right: 0;
-    width: 44px;
-    height: 44px;
-    background: #162938;
+    width: 45px;
+    height: 45px;
+    background: #111f2b;
     font-size: 2em;
-    color: #ffffff; /* icon color------------------ */
+    color: #fff; /* icon color------------------ */
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom-left-radius: 25px ;
-    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px ;
+   /* border-top-right-radius: 20px;*/
     cursor: pointer;
     z-index: 1;
 }
 
 .form-box h2 {
     font-size: 2em;
-    color: #162938; /* h2 color----------------- */
+    color: var(--main-bg-color); /* h2 color----------------- */
     text-align: center;
 }
 .input-box{
@@ -130,7 +174,7 @@ header{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #162938; /* lable color------------------- */
+    color: var(--main-bg-color); /* lable color------------------- */
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -154,7 +198,7 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #162938; /* icon color------------------ */
+    color: var(--main-bg-color); /* icon color------------------ */
     line-height: 57px; 
 }
 
@@ -188,7 +232,7 @@ width: 100%;
  overflow: hidden;
  transition: all 0.3s;
  border-radius: 12px;
- background-color: #00a2ff; /*F color----------------- */
+ background-color: color: var(--main-bg-color); /*F color----------------- */
  font-weight: 500;
  box-shadow: 0 2px 0 2px #000;
 }
@@ -198,14 +242,14 @@ width: 100%;
  position: absolute;
  width: 270px;
  height: 100%;
- background-color: #3095fb; /* S color */
+ background-color:  darkgrey; /* S color */
  top: 50%;
  transform: skewX(30deg) translate(-150%, -50%);
  transition: all 0.5s;
 }
 
 .btn:hover {
- background-color: #6182a3; /* L color-------- */
+ background-color: rgba(255,255,255, .5); /* L color-------- */
  color: black;
  box-shadow: 0 2px 0 2px #0e0042;
 }
@@ -217,4 +261,19 @@ width: 100%;
 
 .btn:active {
  transform: scale(0.9);
+}
+.login-register{
+    color: var(--main-bg-color);
+    text-align: center;
+    font-size:  1em;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login-register p a {
+    color: rgb(22, 94, 165);
+    text-decoration: none;
+    font-weight: 600;
+}
+.login-register p a:hover {
+    text-decoration: underline;
 }
